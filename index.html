@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-of-all">
+      <header>
+        <p class="current-time"></p>
+        <h1><a href="#" class="effect-shine">Weather App</a></h1>
+        <p class="current-date"></p>
+      </header>
+      <div class="container-of-weatherboxes">
+        <div class="weather-box box-one">
+          <h3 class="country-name">Your searched location</h3>
+          <p class="maps-text">Click the flag to open Google Maps</p>
+          <a href="" class="link-map" target="_blank"><img src="" alt="" class="location-flag" /></a>
+          <p class="lon">Lon</p>
+          <p class="lat">Lat</p>
+        </div>
+        <div class="weather-box">
+          <div class="city-search">
+            <input class="user-input" type="text" pattern="^[a-zA-Z0-9]+$" />
+            <button id="submit" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <h3 class="current-location">Type a city name in the input</h3>
+          <div class="data-container">
+            <h2 class="current-temp"></h2>
+            <div class="weather-icon-div">
+              <img class="weather-icon" src="" alt="current weather icon" />
+              <p class="current-sky"></p>
+            </div>
+            <p class="humidity"></p>
+            <p class="wind-speed"></p>
+            <span class="adv-btn hidden">More...</span>
+          </div>
+        </div>
+        <div class="weather-box box-three">
+          <div class="grid-container">
+            <div class="grid-cell top-row">
+              <h3 class="sun-info"></h3>
+            </div>
+            <div class="grid-cell sunrise-search-text"></div>
+            <div class="grid-cell"><img src="./weathericons/sunrise.png" alt="123" class="sunrise-img" /></div>
+            <div class="grid-cell sunrise-local-text"></div>
+            <div class="grid-cell sunset-search-text"></div>
+            <div class="grid-cell"><img src="./weathericons/sunset.png" alt="123" class="sunset-img" /></div>
+            <div class="grid-cell sunset-local-text"></div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="icon-div">
+          <a href="https://www.instagram.com/kmarnat/" class="icon-box" target="_blank"><i class="fa fa-instagram social-icon"></i></a>
+          <a href="https://github.com/KMarnat" class="icon-box" target="_blank"><i class="fa fa-github social-icon"></i></a>
+          <a href="https://www.linkedin.com/in/kasparmarnat/" class="icon-box" target="_blank">
+            <i class="fa fa-linkedin social-icon"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
