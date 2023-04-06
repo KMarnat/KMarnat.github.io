@@ -324,15 +324,3 @@ a {
     -webkit-mask-position: -50%;
   }
 }
-
-/* @media only screen and (max-width: 1620px) {
-  .container-of-all {
-    justify-content: flex-start;
-    min-height: 100%;
-    height: auto;
-  }
-
-  .container-of-weatherboxes {
-    flex-direction: column;
-  }
-} */
